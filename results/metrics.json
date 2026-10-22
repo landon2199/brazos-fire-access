@@ -1,0 +1,398 @@
+{
+  "area": {
+    "state_fips": "48",
+    "county_fips": "041",
+    "name": "Brazos County, Texas"
+  },
+  "population_2020": 233849,
+  "blocks_total": 3462,
+  "blocks_populated": 2523,
+  "network": {
+    "nodes_downloaded": 10958,
+    "edges_downloaded": 26503,
+    "nodes_kept": 10822,
+    "edges_kept": 26320,
+    "nodes_dropped": 136,
+    "edges_dropped": 183,
+    "road_km_downloaded": 6270.2,
+    "road_km_kept": 6079.3,
+    "share_edges_with_maxspeed_tag": 0.293,
+    "fallback_kph": 48.0,
+    "mean_speed_kph_by_type": {
+      "residential": 47.4,
+      "tertiary": 56.0,
+      "unclassified": 45.9,
+      "secondary": 75.5,
+      "primary": 75.4,
+      "trunk": 96.0,
+      "trunk_link": 48.3,
+      "secondary_link": 56.3,
+      "primary_link": 64.9,
+      "motorway_link": 96.6,
+      "motorway": 114.1,
+      "tertiary_link": 88.5,
+      "living_street": 44.3
+    }
+  },
+  "assumptions": {
+    "speed_factor": 1.0,
+    "fallback_kph": 48.0,
+    "access_kph": 20.0,
+    "station_access_kph": 30.0,
+    "station_snapping": "nearest road edge, split at the projected point (both directions)",
+    "turn_penalties": false,
+    "traffic": false,
+    "measure": "travel time only (no call processing, turnout or set-up)",
+    "candidate_grid_km": 1.6,
+    "graph_buffer_km": 2.0
+  },
+  "stations": {
+    "osm_features": 16,
+    "merged_duplicates": 0,
+    "osm_stations": 16,
+    "supplement_file": "data_sources/stations_supplement.csv",
+    "supplement_added": 9,
+    "supplement_skipped": [
+      {
+        "name": "South Brazos County Fire Department Station 4",
+        "reason": "excluded in file (see note)"
+      }
+    ],
+    "stations_total": 25,
+    "names": [
+      "College Station Fire Station #4",
+      "College Station Fire Department Station 6",
+      "College Station Fire Department Station 1",
+      "Bryan Fire Department Station 1",
+      "College Station Fire Station #3",
+      "Bryan Fire Department Station 5",
+      "College Station Fire Department Station 5",
+      "South Brazos County Fire Station 2",
+      "College Station Fire Department Station 2",
+      "South Brazos County Fire Department Station 1",
+      "Brushy Station (Brazos County Precinct 4 VFD Station 3)",
+      "Bryan Fire Department Station 2",
+      "Bryan Fire Department Station 4",
+      "Bryan Fire Department Station 3",
+      "Brazos County District 2 Volunteer Fire Department Station 1",
+      "Brazos County Precinct 4 VFD Station 1 (unnamed in OSM)",
+      "College Station Fire Department Station 7",
+      "Brazos County VFD District 2 Station 2",
+      "Brazos County VFD District 2 Station 3",
+      "Brazos County Precinct 3 VFD Station 1",
+      "Brazos County Precinct 3 VFD Station 2",
+      "Brazos County Precinct 3 VFD Station 3",
+      "Brazos County Precinct 4 VFD Station 2",
+      "South Brazos County Fire Department Station 3",
+      "South Brazos County Fire Department Station 6"
+    ]
+  },
+  "coverage_today": {
+    "4": {
+      "population": 192446,
+      "share": 0.8229
+    },
+    "8": {
+      "population": 225626,
+      "share": 0.9648
+    },
+    "12": {
+      "population": 231467,
+      "share": 0.9898
+    }
+  },
+  "drive_time_min": {
+    "pop_weighted_mean": 3.2,
+    "pop_weighted_median": 2.83,
+    "pop_weighted_p90": 5.1,
+    "max": 18.9
+  },
+  "population_by_first_due_station": {
+    "College Station Fire Department Station 6": 28432,
+    "College Station Fire Department Station 2": 28005,
+    "Bryan Fire Department Station 1": 27529,
+    "Bryan Fire Department Station 3": 19071,
+    "College Station Fire Department Station 1": 18010,
+    "College Station Fire Station #3": 15718,
+    "College Station Fire Station #4": 15090,
+    "Bryan Fire Department Station 2": 14981,
+    "Bryan Fire Department Station 5": 12598,
+    "Bryan Fire Department Station 4": 7086,
+    "South Brazos County Fire Department Station 1": 6765,
+    "College Station Fire Department Station 7": 6617,
+    "College Station Fire Department Station 5": 6147,
+    "South Brazos County Fire Department Station 6": 5288,
+    "South Brazos County Fire Department Station 3": 2981,
+    "Brazos County Precinct 4 VFD Station 2": 2807,
+    "Brazos County Precinct 3 VFD Station 3": 2695,
+    "Brazos County Precinct 3 VFD Station 2": 2274,
+    "Brazos County District 2 Volunteer Fire Department Station 1": 2229,
+    "South Brazos County Fire Station 2": 2029,
+    "Brazos County Precinct 3 VFD Station 1": 1972,
+    "Brazos County VFD District 2 Station 3": 1741,
+    "Brazos County VFD District 2 Station 2": 1666,
+    "Brazos County Precinct 4 VFD Station 1 (unnamed in OSM)": 1183,
+    "Brushy Station (Brazos County Precinct 4 VFD Station 3)": 935
+  },
+  "validation": {
+    "blocks_over_2km_from_station": 909,
+    "straight_line_speed_kph_median": 42.3,
+    "straight_line_speed_kph_p5_p95": [
+      27.0,
+      60.7
+    ],
+    "max_edge_speed_kph": 120.7,
+    "blocks_faster_than_max_edge_speed": 0,
+    "sample": [
+      {
+        "straight_line_km": 2.08,
+        "drive_min": 3.5,
+        "straight_line_kph": 35.6
+      },
+      {
+        "straight_line_km": 2.82,
+        "drive_min": 6.1,
+        "straight_line_kph": 27.6
+      },
+      {
+        "straight_line_km": 2.25,
+        "drive_min": 4.3,
+        "straight_line_kph": 31.7
+      },
+      {
+        "straight_line_km": 4.97,
+        "drive_min": 7.5,
+        "straight_line_kph": 39.6
+      },
+      {
+        "straight_line_km": 6.12,
+        "drive_min": 11.0,
+        "straight_line_kph": 33.5
+      },
+      {
+        "straight_line_km": 2.78,
+        "drive_min": 5.6,
+        "straight_line_kph": 29.8
+      },
+      {
+        "straight_line_km": 2.54,
+        "drive_min": 3.9,
+        "straight_line_kph": 38.9
+      },
+      {
+        "straight_line_km": 3.93,
+        "drive_min": 6.3,
+        "straight_line_kph": 37.5
+      }
+    ],
+    "block_snap_m_median": 83.0,
+    "block_snap_m_p95": 614.0,
+    "station_snap_m_max": 174.0
+  },
+  "candidates": 430,
+  "mclp": {
+    "4": {
+      "covered_today": {
+        "population": 192446,
+        "share": 0.8229
+      },
+      "add_1": {
+        "new_sites": [
+          {
+            "lon": -96.36167,
+            "lat": 30.69842,
+            "near": "US 190",
+            "alone_gain": 3588
+          }
+        ],
+        "population_gained": 3588,
+        "share_gained": 0.0153,
+        "solver": "HiGHS (highspy) via PuLP",
+        "status": "Optimal",
+        "covered_after": {
+          "population": 196034,
+          "share": 0.8383
+        },
+        "enumeration_check": {
+          "best_value": 3588,
+          "matches_ilp": true
+        }
+      },
+      "add_2": {
+        "new_sites": [
+          {
+            "lon": -96.36167,
+            "lat": 30.69842,
+            "near": "US 190",
+            "alone_gain": 3588
+          },
+          {
+            "lon": -96.39443,
+            "lat": 30.6552,
+            "near": "Beck Street (~0.3 km away)",
+            "alone_gain": 3156
+          }
+        ],
+        "population_gained": 6744,
+        "share_gained": 0.0288,
+        "solver": "HiGHS (highspy) via PuLP",
+        "status": "Optimal",
+        "covered_after": {
+          "population": 199190,
+          "share": 0.8518
+        },
+        "enumeration_check": {
+          "best_value": 6744,
+          "matches_ilp": true
+        }
+      }
+    },
+    "8": {
+      "covered_today": {
+        "population": 225626,
+        "share": 0.9648
+      },
+      "add_1": {
+        "new_sites": [
+          {
+            "lon": -96.39565,
+            "lat": 30.75894,
+            "near": "FM 2223",
+            "alone_gain": 1165
+          }
+        ],
+        "population_gained": 1165,
+        "share_gained": 0.005,
+        "solver": "HiGHS (highspy) via PuLP",
+        "status": "Optimal",
+        "covered_after": {
+          "population": 226791,
+          "share": 0.9698
+        },
+        "enumeration_check": {
+          "best_value": 1165,
+          "matches_ilp": true
+        }
+      },
+      "add_2": {
+        "new_sites": [
+          {
+            "lon": -96.38527,
+            "lat": 30.82896,
+            "near": "TX OSR (~1.8 km away)",
+            "alone_gain": 815
+          },
+          {
+            "lon": -96.39565,
+            "lat": 30.75894,
+            "near": "FM 2223",
+            "alone_gain": 1165
+          }
+        ],
+        "population_gained": 1980,
+        "share_gained": 0.0085,
+        "solver": "HiGHS (highspy) via PuLP",
+        "status": "Optimal",
+        "covered_after": {
+          "population": 227606,
+          "share": 0.9733
+        },
+        "enumeration_check": {
+          "best_value": 1980,
+          "matches_ilp": true
+        }
+      }
+    }
+  },
+  "p_median": {
+    "mean_drive_min_today": 3.2,
+    "add_1": {
+      "mean_drive_min": 3.1,
+      "new_sites": [
+        {
+          "lon": -96.34598,
+          "lat": 30.62669,
+          "near": "TX 308"
+        }
+      ]
+    },
+    "add_2": {
+      "mean_drive_min": 3.01,
+      "new_sites": [
+        {
+          "lon": -96.34598,
+          "lat": 30.62669,
+          "near": "TX 308"
+        },
+        {
+          "lon": -96.3312,
+          "lat": 30.59772,
+          "near": "Holleman Drive"
+        }
+      ]
+    }
+  },
+  "sensitivity": {
+    "speed_x0.80": {
+      "coverage_today": {
+        "4": {
+          "population": 161243,
+          "share": 0.6895
+        },
+        "8": {
+          "population": 220956,
+          "share": 0.9449
+        },
+        "12": {
+          "population": 230498,
+          "share": 0.9857
+        }
+      },
+      "mclp_4min_add_2": {
+        "population_gained": 11242,
+        "site_shift_km": [
+          12.33,
+          8.0
+        ]
+      },
+      "mclp_8min_add_2": {
+        "population_gained": 2234,
+        "site_shift_km": [
+          29.11,
+          8.88
+        ]
+      }
+    },
+    "speed_x1.20": {
+      "coverage_today": {
+        "4": {
+          "population": 206947,
+          "share": 0.885
+        },
+        "8": {
+          "population": 228729,
+          "share": 0.9781
+        },
+        "12": {
+          "population": 232103,
+          "share": 0.9925
+        }
+      },
+      "mclp_4min_add_2": {
+        "population_gained": 3954,
+        "site_shift_km": [
+          4.05,
+          8.0
+        ]
+      },
+      "mclp_8min_add_2": {
+        "population_gained": 1855,
+        "site_shift_km": [
+          3.5,
+          21.95
+        ]
+      }
+    }
+  },
+  "runtime_s": 19.2
+}

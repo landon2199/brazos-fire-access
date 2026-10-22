@@ -1,0 +1,21 @@
+name: gis-portfolio
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - geopandas=1.2.0
+  - shapely=2.2.0
+  - pyogrio
+  - numpy=2.5.4
+  - pandas=3.0.6
+  - scipy=1.18.1
+  - networkx=3.7
+  - osmnx=2.1.1
+  - scikit-learn=1.9.1   # OSMnx nearest-node search
+  - pulp=4.2.0
+  - highspy=1.15.1
+  - matplotlib=3.11.2
+  - contextily=1.7.1
+  - folium=0.20.0
+  - requests
+  - pytest
