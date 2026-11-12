@@ -139,3 +139,7 @@ The same workflow maps onto ArcGIS Pro Network Analyst: the **Service Area** sol
 - NFPA 1710, *Standard for the Organization and Deployment of Fire Suppression Operations, Emergency Medical Operations, and Special Operations to the Public by Career Fire Departments*, 2020 edition. National Fire Protection Association.
 - NFPA 1720, *Standard for the Organization and Deployment of Fire Suppression Operations, Emergency Medical Operations, and Special Operations to the Public by Volunteer Fire Departments*, 2020 edition. National Fire Protection Association.
 - NFPA 1750, *Standard for the Organization and Deployment of Fire Suppression Operations, Emergency Medical Services, Special Operations, and Fire Prevention Activities*, 2026 edition. National Fire Protection Association. Consolidates NFPA 1710, 1720, 1730 and 1201 (status per nfpa.org document pages, checked October 2026).
+
+## AI assistance
+
+Built with an AI coding assistant (Claude Code, by Anthropic). Commits made with it carry its `Co-Authored-By` line.
