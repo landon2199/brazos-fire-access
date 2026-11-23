@@ -206,12 +206,12 @@ def folium_map(iso: dict, stations, plans: dict, county, cov: dict, out: Path, i
     c = county.to_crs(4326).geometry.iloc[0].centroid
     m = folium.Map(location=[c.y, c.x], zoom_start=10, tiles=None, control_scale=True)
     folium.TileLayer(
-        tiles="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
-        attr="Powered by <a href='https://www.esri.com'>Esri</a> | Esri, HERE, Garmin, &copy; "
-             "<a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors | "
+        tiles="https://tile.openstreetmap.org/{z}/{x}/{y}.png", class_name="gray-base",
+        attr="Basemap &copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors | "
              "Roads &amp; stations &copy; OpenStreetMap contributors (ODbL), plus stations from department lists | Population: U.S. Census Bureau 2020",
-        name="Esri World Light Gray Canvas", max_zoom=16,
+        name="OpenStreetMap (gray)", max_zoom=19,
     ).add_to(m)
+    m.get_root().header.add_child(folium.Element("<style>.gray-base{filter:grayscale(1) brightness(1.06) contrast(0.92);}</style>"))
     folium.GeoJson(county.to_crs(4326).boundary.__geo_interface__, name="County boundary",
                    style_function=lambda f: {"color": "#1f2328", "weight": 1.5, "fill": False}).add_to(m)
     for mm in sorted(iso, reverse=True):

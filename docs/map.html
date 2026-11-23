@@ -51,6 +51,7 @@
             </script>
 
         
+<style>.gray-base{filter:grayscale(1) brightness(1.06) contrast(0.92);}</style>
 </head>
 <body>
     
@@ -82,13 +83,14 @@
         
     
             var tile_layer_b3f03ad91fc36d7225160981f205d5ab = L.tileLayer(
-                "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
-  "maxZoom": 16,
-  "maxNativeZoom": 16,
+  "className": "gray-base",
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
   "noWrap": false,
-  "attribution": "Powered by \u003ca href=\u0027https://www.esri.com\u0027\u003eEsri\u003c/a\u003e | Esri, HERE, Garmin, \u0026copy; \u003ca href=\u0027https://www.openstreetmap.org/copyright\u0027\u003eOpenStreetMap\u003c/a\u003e contributors | Roads \u0026amp; stations \u0026copy; OpenStreetMap contributors (ODbL), plus stations from department lists | Population: U.S. Census Bureau 2020",
+  "attribution": "Basemap \u0026copy; \u003ca href=\u0027https://www.openstreetmap.org/copyright\u0027\u003eOpenStreetMap\u003c/a\u003e contributors | Roads \u0026amp; stations \u0026copy; OpenStreetMap contributors (ODbL), plus stations from department lists | Population: U.S. Census Bureau 2020",
   "subdomains": "abc",
   "detectRetina": false,
   "tms": false,
@@ -883,7 +885,7 @@
     
             var layer_control_89202df7dbf825d16912a4322c880ef7_layers = {
                 base_layers : {
-                    "Esri World Light Gray Canvas" : tile_layer_b3f03ad91fc36d7225160981f205d5ab,
+                    "OpenStreetMap (gray)" : tile_layer_b3f03ad91fc36d7225160981f205d5ab,
                 },
                 overlays :  {
                     "County boundary" : geo_json_c7d7c4d6d0efb3dd76cbbfcd2ee3aac2,
